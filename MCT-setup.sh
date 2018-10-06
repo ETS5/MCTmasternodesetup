@@ -243,6 +243,9 @@ maxconnections=30
 externalip=$publicip
 masternode=1
 masternodeprivkey=$genkey
+addnode=195.181.223.95
+addnode=185.220.70.241
+addnode=80.211.76.159
 EOF
 
 #Finally, starting MCT daemon with new mct.conf
