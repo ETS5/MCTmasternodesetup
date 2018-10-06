@@ -160,8 +160,8 @@ fi
 
 #Installing Daemon
 cd ~
-mkdir MCT
-cd MCT
+mkdir mct
+cd mct
 wget https://github.com/mctsystem/mct-coin/releases/download/18.0.1/mct-linux-cli-v18.0.1.tar.gz
 tar -xvf mct-linux-cli-v18.0.1.tar.gz 
 rm -rf mct-linux-cli-v18.0.1.tar.gz
@@ -169,8 +169,9 @@ rm -rf mct-linux-cli-v18.0.1.tar.gz
 stop_daemon
 
 # Deploy binaries to /usr/bin
-sudo cp MCT/mct* /usr/bin/
-sudo chmod 755 -R ~/MCTmasternodesetup
+cd ~
+sudo cp mct/mct* /usr/bin/
+sudo chmod 755 -R ~/mct
 sudo chmod 755 /usr/bin/mct*
 
 # Deploy masternode monitoring script
